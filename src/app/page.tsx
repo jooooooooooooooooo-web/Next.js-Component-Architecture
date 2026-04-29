@@ -1,3 +1,16 @@
+'use client'
+
+import {Button} from '@/src/components/ui/Button'
+
+export default function Home() {
+  return (
+    <main className="mx-auto container flex justify-center mt-20">
+      <Button>Button</Button>
+    </main>
+  )
+}
+
+/*
 import Image from "next/image";
 
 export default function Home() {
@@ -63,3 +76,4 @@ export default function Home() {
     </div>
   );
 }
+*/

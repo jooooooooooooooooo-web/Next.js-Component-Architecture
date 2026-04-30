@@ -4,10 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Home', href: '#hero' },
+    { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
 ]
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
         <header className="sticky top-0 z-50 bg-[#102336] shadow-md">
             <div className="max-w-4xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
 
-                <Link href="/" className="flex items-center gap-2">
+                <Link href="#hero" className="flex items-center gap-2">
                 <Image src="/Images/Logo2.png" alt="logo" width={32} height={32} />
                 <span className="text-[#D6D6D6] font-bold text-xl">Jopfel Gafate</span>
                 </Link>

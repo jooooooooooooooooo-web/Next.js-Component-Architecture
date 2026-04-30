@@ -36,7 +36,7 @@ const Projects = () => {
                         { name: 'Card Game', icon: <BsCardChecklist /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web/Card-Games',
-                    demo: '/videos/Palace.mp4'
+                    demo: '/videos/Palace2.mp4'
                 }} />
             </div>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
@@ -50,7 +50,7 @@ const Projects = () => {
                         { name: 'Card Game', icon: <BsCardChecklist /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web',
-                    demo: '/videos/build.mp4'
+                    demo: '/videos/Build2.mp4'
                 }} />
             </div>
     </section>

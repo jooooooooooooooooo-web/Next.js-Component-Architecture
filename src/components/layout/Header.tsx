@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
     { name: 'Home', href: '/' },
@@ -15,13 +16,12 @@ const Header = () => {
     return (
         <header className="sticky top-0 z-50 bg-[#102336] shadow-md">
             <div className="max-w-4xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
-                
-                {/* Logo / Brand */}
-                <Link href="/" className="text-[#D6D6D6] font-bold text-xl">
-                    YourName
+
+                <Link href="/" className="flex items-center gap-2">
+                <Image src="/Images/Logo2.png" alt="logo" width={32} height={32} />
+                <span className="text-[#D6D6D6] font-bold text-xl">Jopfel Gafate</span>
                 </Link>
 
-                {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-6">
                     {navLinks.map((link) => (
                         <Link
@@ -34,9 +34,8 @@ const Header = () => {
                     ))}
                 </nav>
 
-                {/* Hamburger Button */}
                 <button
-                    className="md:hidden text-[#D6D6D6] hover:text-white"
+                    className="text-[#D6D6D6] hover:text-white"
                     onClick={() => setMenuOpen(!menuOpen)}
                 >
                     {menuOpen ? '✕' : '☰'}
@@ -45,7 +44,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <nav className="md:hidden flex flex-col px-4 pb-4 gap-3">
+                <nav className="flex flex-col px-4 pb-4 gap-3">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}

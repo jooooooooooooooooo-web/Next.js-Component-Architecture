@@ -4,8 +4,10 @@ import {Button} from '@/src/components/ui/Button'
 
 export default function Home() {
   return (
-    <main className="mx-auto container flex justify-center mt-20">
-      <Button>Button</Button>
+    <main className="bg-white mx-auto container flex justify-center gap-4 mt-20">
+      <Button variant = "primary">Main</Button>
+      <Button variant = "secondary">Secondary</Button>
+      <Button variant = "outline">Outline</Button>
     </main>
   )
 }

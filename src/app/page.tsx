@@ -1,18 +1,21 @@
 'use client'
 
-import {Button} from '@/src/components/ui/Button'
-import {Card} from '@/src/components/ui/Card'
-import { AiOutlineThunderbolt } from 'react-icons/ai'
-import { BsCpu } from 'react-icons/bs'
-import { FaMicrochip } from 'react-icons/fa'
-import { MdLoop } from 'react-icons/md'
-import {SiReact, SiTypescript, SiTailwindcss, SiPython} from 'react-icons/si'
 import { Hero } from '@/src/components/sections/Hero'
+import { About } from '@/src/components/sections/About'
+import { Projects } from '@/src/components/sections/Projects'
+import { Contact } from '../components/sections/Contact'
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <div>
+        <Hero />
+      </div>
+      <div className='bg-[#D6D6D6]'>
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </main>
   )
 }

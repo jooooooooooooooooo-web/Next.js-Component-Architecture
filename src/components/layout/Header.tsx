@@ -42,7 +42,6 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             {menuOpen && (
                 <nav className="flex flex-col px-4 pb-4 gap-3">
                     {navLinks.map((link) => (

@@ -23,13 +23,12 @@ const Footer = () => {
                 </div>
 
                 <div className="flex gap-4 text-[#D6D6D6] text-sm">
-                    <a href="jopfel.gafate-23@cpu.edu.ph" className="hover:text-white transition">
+                    <a href="mailto:jopfel.gafate-23@cpu.edu.ph" className="hover:text-white transition">
                         jopfel.gafate-23@cpu.edu.ph
                     </a>
-                    <Link href="/projects" className="hover:text-white transition">Projects</Link>
-                    <Link href="/contact" className="hover:text-white transition">Contact</Link>
-                </div>
-
+                        <Link href="#projects" className="hover:text-white transition">Projects</Link>
+                        <Link href="#contact" className="hover:text-white transition">Contact</Link>
+                    </div>
             </div>
         </footer>
     )

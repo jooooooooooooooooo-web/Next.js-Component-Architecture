@@ -4,7 +4,7 @@ import { Button } from '@/src/components/ui/Button'
 
 const Hero = () => {
     return (
-        <section className="min-h-screen flex items-center justify-center bg-linear-to-br from-[#102336] to-[#C0C0C0] from-[#102336] to-[#0a1628] px-4">
+        <section id="hero" className="min-h-screen flex items-center justify-center bg-linear-to-br from-[#102336] to-[#C0C0C0] px-4">
             <div className="flex flex-col items-center text-center gap-6 max-w-2xl">
                 
                 <h1 className="text-5xl font-bold text-white">
@@ -16,14 +16,14 @@ const Hero = () => {
                 </h2>
 
                 <p className="text-[#9CA3AF] text-lg">
-                    Blending the mental and the physical, I pride myself on my hardware skills, and with my knowledge of software, I can keep both halves of development working as smooth as possible
+                    Blending the mental and the physical
                 </p>
 
                 <div className="flex gap-4 mt-4">
-                    <Link href="/projects">
+                    <Link href="#projects">
                         <Button variant="primary">My Projects</Button>
                     </Link>
-                    <Link href="/contact">
+                    <Link href="#contact">
                         <Button variant="secondary">Send a Message</Button>
                     </Link>
                 </div>

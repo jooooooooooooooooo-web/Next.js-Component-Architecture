@@ -1,3 +1,5 @@
+Setup is as simple as following the vercel link. This is mostly a repository of the code
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

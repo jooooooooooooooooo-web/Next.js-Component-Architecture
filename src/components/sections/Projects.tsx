@@ -7,6 +7,9 @@ import {SiReact, SiPython, SiNextdotjs} from 'react-icons/si'
 import { LuBrain } from 'react-icons/lu'
 import { Fade } from '../ui/Fade'
 import { HiOutlineBriefcase } from 'react-icons/hi'
+import { FaMicrochip } from 'react-icons/fa'
+import { GiCircuitry } from 'react-icons/gi'
+import { HiOutlineWrenchScrewdriver } from 'react-icons/hi2'
 
 const Projects = () => {
     return (
@@ -73,9 +76,9 @@ const Projects = () => {
                     description: 'Its not necessarily code related, but it is a big part of my professional identity. I have built about 3 PCs since I first learned in 2015, and I have made more than a few upgrades to each of them. I can finish a build in as little as 1 hour now',
                     image: '/Images/build.jpg',
                     technology: [
-                        { name: 'Python', icon: <SiPython /> },
-                        { name: 'Strategy', icon: <LuBrain /> },
-                        { name: 'Card Game', icon: <BsCardChecklist /> },
+                        { name: 'Hardware Skill', icon: <FaMicrochip /> },
+                        { name: 'Power Knowledge', icon: <GiCircuitry /> },
+                        { name: 'Tools Usage', icon: <HiOutlineWrenchScrewdriver /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web',
                     demo: ''//none available

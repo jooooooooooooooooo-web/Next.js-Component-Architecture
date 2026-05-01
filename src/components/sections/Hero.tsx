@@ -1,10 +1,12 @@
 'use client'
 import Link from 'next/link'
 import { Button } from '@/src/components/ui/Button'
+import { Fade } from '../ui/Fade'
 
 const Hero = () => {
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center bg-linear-to-br from-[#102336] to-[#C0C0C0] px-4">
+            <Fade delay={100}>
             <div className="flex flex-col items-center text-center gap-6 max-w-2xl">
                 
                 <h1 className="text-5xl font-bold text-white">
@@ -29,6 +31,7 @@ const Hero = () => {
                 </div>
 
             </div>
+            </Fade>
         </section>
     )
 }

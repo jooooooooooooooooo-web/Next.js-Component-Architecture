@@ -14,19 +14,22 @@ const navLinks = [
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     const [mounted, setMounted] = useState(false)
-    const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-        if (typeof window === 'undefined') return 'dark'
-        return (localStorage.getItem('theme') as 'dark' | 'light') ?? 'dark'
-    })
+    const [lighting, setLighting] = useState<'dark' | 'light'>('dark')
+    
+    useEffect(() => {
+        const saved = (localStorage.getItem('theme') as 'dark' | 'light') ?? 'dark'
+        setLighting(saved)
+        setMounted(true)
+    }, [])
 
     useEffect(() => {
-        document.documentElement.dataset.theme = theme
-        setMounted(true)
-    }, [theme])
+        if (!mounted) return
+        document.documentElement.dataset.theme = lighting
+    }, [lighting, mounted])
 
     function toggleTheme() {
-        const next = theme === 'dark' ? 'light' : 'dark'
-        setTheme(next)
+        const next = lighting === 'dark' ? 'light' : 'dark'
+        setLighting(next)
         localStorage.setItem('theme', next)
     }
 
@@ -55,7 +58,7 @@ const Header = () => {
                     variant = "secondary"
                     onClick={toggleTheme}
                 >
-                    {theme === 'light' ? 'Light' : 'Dark'}
+                    {lighting === 'light' ? 'Light' : 'Dark'}
                 </Button>
                 <button
                     className="text-[#D6D6D6] hover:text-white"

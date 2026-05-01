@@ -38,22 +38,3 @@ const Button = forwardRef<HTMLButtonElement, Props>(
 Button.displayName = 'Button'
 
 export { Button }
-
-/*
-export const Button = (props: Props) => {
-    return <button 
-    className="
-    bg-indigo-500 text-white 
-     py-2 px-8 leading-6 
-     rounded-full 
-     font-semibold tracking-wide 
-     cursor-pointer 
-     inline-flex items-center justify-center 
-     relative shadow 
-     transition
-     hover:bg-indigo-600 hover:shadow-md
-     outline-none
-     ring-indigo-500/70 ring-offset-2
-     focus-visible:ring-2 focus:scale-[0.98]"
-    {...props} />
-*/

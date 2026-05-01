@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Fade } from '@/src/components/ui/Fade';
 
 export const About = () => {
   const skills = [
@@ -14,6 +15,7 @@ export const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
 
+        <Fade delay={150}>
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-6 text-[#102336]">About Me</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -24,7 +26,9 @@ export const About = () => {
             I can keep both halves of development working as smooth as possible
           </p>
         </div>
+        </Fade>
 
+        <Fade delay={200}>
         <div className="mb-10 flex justify-center">
             <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl">
                 <Image 
@@ -35,7 +39,9 @@ export const About = () => {
                 />
             </div>
         </div>
+        </Fade>
 
+        <Fade delay={250}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill) => (
             <div 
@@ -56,13 +62,16 @@ export const About = () => {
             </div>
           ))}
         </div>
+        </Fade>
 
+        <Fade delay={300}>
         <div className="mt-16 pt-8 border-t border-gray-400/30 text-center">
           <p className="text-[#102336] font-medium italic">
             BS in Computer Science • Central Philippine University
              | CompTIA A+ Certified
           </p>
         </div>
+        </Fade>
 
       </div>
     </section>

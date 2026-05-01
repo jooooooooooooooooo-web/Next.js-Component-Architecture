@@ -6,11 +6,16 @@ import { FaMicrochip, FaRegAddressCard } from 'react-icons/fa'
 import { MdLoop, MdOutlineSmartButton } from 'react-icons/md'
 import {SiReact, SiTypescript, SiTailwindcss, SiPython} from 'react-icons/si'
 import { LuBrain } from 'react-icons/lu'
+import { Fade } from '../ui/Fade'
 
 const Projects = () => {
     return (
         <section id="projects" className="py-20 px-4">
+            <Fade delay={150}>
             <h2 className="text-4xl font-bold text-[#102336] text-center mb-4">My Projects</h2>
+            </Fade>
+
+            <Fade delay={200}>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
                 <Card project={{
                     title: 'Turtle Racer',
@@ -25,6 +30,9 @@ const Projects = () => {
                     demo: '/Videos/Turtles-web.mp4'
                 }} />
             </div>
+            </Fade>
+
+            <Fade delay={250}>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
                 <Card project={{
                     title: 'Palace',
@@ -39,6 +47,9 @@ const Projects = () => {
                     demo: '/Videos/Palace2-web.mp4'
                 }} />
             </div>
+            </Fade>
+
+            <Fade delay={300}>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
                 <Card project={{
                     title: 'PC Building',
@@ -53,7 +64,8 @@ const Projects = () => {
                     demo: ''//none available
                 }} />
             </div>
-    </section>
+            </Fade>
+        </section>
     )
 }
 

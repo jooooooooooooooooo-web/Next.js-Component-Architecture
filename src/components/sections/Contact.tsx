@@ -1,11 +1,12 @@
 'use client'
 import { Button } from '@/src/components/ui/Button'
-import { Card } from '@/src/components/ui/Card'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { Fade } from '../ui/Fade'
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4">
+      <Fade delay={150}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#102336] mb-4">Contact Me</h2>
@@ -79,6 +80,7 @@ const Contact = () => {
             </form>
         </div>
       </div>
+      </Fade>
     </section>
   )
 }

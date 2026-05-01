@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-[#D6D6D6]">
+    <section id="contact" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#102336] mb-4">Contact Me</h2>
@@ -22,8 +22,8 @@ const Contact = () => {
                 <FaEnvelope size={20} />
               </div>
               <div>
-                <h4 className="font-bold text-[#102336]">Email</h4>
-                <p className="text-sm text-gray-600">jopfel.gafate@example.com</p>
+                <h3 className="font-bold text-[#102336]">Email</h3>
+                <p className="text-sm text-gray-600">jopfel.gafate-23@cpu.edu.ph</p>
               </div>
             </div>
 
@@ -32,8 +32,8 @@ const Contact = () => {
                 <FaLinkedin size={20} />
               </div>
               <div>
-                <h4 className="font-bold text-[#102336]">LinkedIn</h4>
-                <p className="text-sm text-gray-600">linkedin.com/in/jopfelgafate</p>
+                <h3 className="font-bold text-[#102336]">LinkedIn</h3>
+                <p className="text-sm text-gray-600">www.linkedin.com/in/jopfelgafate</p>
               </div>
             </div>
 
@@ -42,8 +42,8 @@ const Contact = () => {
                 <FaGithub size={20} />
               </div>
               <div>
-                <h4 className="font-bold text-[#102336]">GitHub</h4>
-                <p className="text-sm text-gray-600">github.com/jopfel-dev</p>
+                <h3 className="font-bold text-[#102336]">GitHub</h3>
+                <p className="text-sm text-gray-600">https://github.com/jooooooooooooooooo-web</p>
               </div>
             </div>
           </div>

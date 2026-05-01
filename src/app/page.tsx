@@ -11,7 +11,7 @@ export default function Home() {
       <div>
         <Hero />
       </div>
-      <div className='bg-[#D6D6D6]'>
+      <div>
         <About />
         <Projects />
         <Contact />

@@ -1,5 +1,6 @@
 'use client'
-import { useState } from 'react'
+import { Button } from '@/src/components/ui/Button'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -12,6 +13,22 @@ const navLinks = [
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+    const [mounted, setMounted] = useState(false)
+    const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+        if (typeof window === 'undefined') return 'dark'
+        return (localStorage.getItem('theme') as 'dark' | 'light') ?? 'dark'
+    })
+
+    useEffect(() => {
+        document.documentElement.dataset.theme = theme
+        setMounted(true)
+    }, [theme])
+
+    function toggleTheme() {
+        const next = theme === 'dark' ? 'light' : 'dark'
+        setTheme(next)
+        localStorage.setItem('theme', next)
+    }
 
     return (
         <header className="sticky top-0 z-50 bg-[#102336] shadow-md">
@@ -34,6 +51,12 @@ const Header = () => {
                     ))}
                 </nav>
 
+                <Button
+                    variant = "secondary"
+                    onClick={toggleTheme}
+                >
+                    {theme === 'light' ? 'Light' : 'Dark'}
+                </Button>
                 <button
                     className="text-[#D6D6D6] hover:text-white"
                     onClick={() => setMenuOpen(!menuOpen)}

@@ -2,7 +2,6 @@
 import { Card } from '@/src/components/ui/Card'
 import { AiOutlineThunderbolt } from 'react-icons/ai'
 import { BsCardChecklist, BsCpu } from 'react-icons/bs'
-import { FaMicrochip, FaRegAddressCard } from 'react-icons/fa'
 import { MdLoop, MdOutlineSmartButton } from 'react-icons/md'
 import {SiReact, SiTypescript, SiTailwindcss, SiPython} from 'react-icons/si'
 import { LuBrain } from 'react-icons/lu'
@@ -50,6 +49,23 @@ const Projects = () => {
             </Fade>
 
             <Fade delay={300}>
+            <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
+                <Card project={{
+                    title: 'My First Portfolio Website',
+                    description: 'This is the first version I made of this website about a year ago, I like to keep it here to show how much I have evolved with front end displays. It similarly uses vercel and is coded in Next.js',
+                    image: '/Images/OGResume.png',
+                    technology: [
+                        { name: 'Python', icon: <SiPython /> },
+                        { name: 'Strategy', icon: <LuBrain /> },
+                        { name: 'Card Game', icon: <BsCardChecklist /> },
+                    ],
+                    gitLink: 'https://github.com/jooooooooooooooooo-web/gafate_nextjs_portfolio',
+                    demo: '/Videos/OGResume-web.mp4'
+                }} />
+            </div>
+            </Fade>
+
+            <Fade delay={350}>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
                 <Card project={{
                     title: 'PC Building',

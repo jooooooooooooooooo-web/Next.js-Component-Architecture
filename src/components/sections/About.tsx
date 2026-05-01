@@ -65,7 +65,7 @@ export const About = () => {
         </Fade>
 
         <Fade delay={300}>
-        <div className="mt-16 pt-8 border-t border-gray-400/30 text-center">
+        <div className="mt-16 pt-8 text-center">
           <p className="text-[#102336] font-medium italic">
             BS in Computer Science • Central Philippine University
              | CompTIA A+ Certified

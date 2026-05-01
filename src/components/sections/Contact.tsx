@@ -55,7 +55,7 @@ const Contact = () => {
                 <input 
                 type="text" 
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5D88BB] outline-none transition-all text-black"
-                placeholder="John Doe"
+                placeholder="name"
                 />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ const Contact = () => {
                     <input 
                     type="email"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5D88BB] outline-none transition-all text-black"
-                    placeholder="john@example.com"
+                    placeholder="email"
                     />
                     </div>
                     <div>
@@ -71,7 +71,7 @@ const Contact = () => {
                         <textarea 
                         rows={4}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5D88BB] outline-none transition-all text-black"
-                        placeholder="How can I help you?"
+                        placeholder="message"
                     ></textarea>
                 </div>
                 <Button variant="primary" className="w-full">

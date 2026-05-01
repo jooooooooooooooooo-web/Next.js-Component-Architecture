@@ -3,9 +3,10 @@ import { Card } from '@/src/components/ui/Card'
 import { AiOutlineThunderbolt } from 'react-icons/ai'
 import { BsCardChecklist, BsCpu } from 'react-icons/bs'
 import { MdLoop, MdOutlineSmartButton } from 'react-icons/md'
-import {SiReact, SiTypescript, SiTailwindcss, SiPython} from 'react-icons/si'
+import {SiReact, SiTypescript, SiTailwindcss, SiPython, SiNextdotjs} from 'react-icons/si'
 import { LuBrain } from 'react-icons/lu'
 import { Fade } from '../ui/Fade'
+import { HiOutlineBriefcase } from 'react-icons/hi'
 
 const Projects = () => {
     return (
@@ -55,9 +56,9 @@ const Projects = () => {
                     description: 'This is the first version I made of this website about a year ago, I like to keep it here to show how much I have evolved with front end displays. It similarly uses vercel and is coded in Next.js',
                     image: '/Images/OGResume.png',
                     technology: [
-                        { name: 'Python', icon: <SiPython /> },
-                        { name: 'Strategy', icon: <LuBrain /> },
-                        { name: 'Card Game', icon: <BsCardChecklist /> },
+                        { name: 'React', icon: <SiReact /> },
+                        { name: 'Next.js', icon: <SiNextdotjs /> },
+                        { name: 'Portfolio', icon: <HiOutlineBriefcase /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web/gafate_nextjs_portfolio',
                     demo: '/Videos/OGResume-web.mp4'

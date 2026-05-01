@@ -22,7 +22,7 @@ const Projects = () => {
                         { name: 'Race', icon: <AiOutlineThunderbolt /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web/At-the-races',
-                    demo: '/videos/Turtles.mp4'
+                    demo: '/videos/Turtles-web.mp4'
                 }} />
             </div>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
@@ -36,7 +36,7 @@ const Projects = () => {
                         { name: 'Card Game', icon: <BsCardChecklist /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web/Card-Games',
-                    demo: '/videos/Palace2.mp4'
+                    demo: '/videos/Palace2-web.mp4'
                 }} />
             </div>
             <div className="w-full max-w-2xl mx-auto flex flex-col gap-8 mt-8">
@@ -50,7 +50,7 @@ const Projects = () => {
                         { name: 'Card Game', icon: <BsCardChecklist /> },
                     ],
                     gitLink: 'https://github.com/jooooooooooooooooo-web',
-                    demo: '/videos/Build2.mp4'
+                    demo: ''//none available
                 }} />
             </div>
     </section>
